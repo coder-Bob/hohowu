@@ -1,0 +1,19 @@
+@charset "UTF-8";
+//-----------------------------------------------------	
+// variables scss
+//-----------------------------------------------------
+
+$fontFamily:            webFont !default;
+$fontFilePath:          "../fonts/webFont" !default;
+$fontClassAllSwitch:    false !default;
+$fontClassPrefix:       icon !default;
+$fontClassoutput:       () !default;
+
+//名称&内容列表
+$fontClassAll:      tag 						"\e601",
+					mulu 						"\e604",
+					look  						"\e606",
+					like  						"\e602",
+					date  						"\e601",
+					time  						"\e600",
+					msg 						"\e603" !default;

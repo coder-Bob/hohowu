@@ -1,0 +1,94 @@
+@charset "UTF-8";
+//-----------------------------------------------------	
+// base scss
+// 提供所有的基础功能包括：变量设置，css3前缀填充，@media，基础mixin，栅格化grid，reset样式
+// 默认会输出reset样式一份
+//-----------------------------------------------------
+
+//-----------------------------------------------------
+// author:      结一 (http://weibo.com/marvin1023)
+// version:     3.0
+// time:        2014-02-08
+// url:         https://github.com/marvin1023/sassCore/    http://tobe.w3cplus.com/
+//-----------------------------------------------------
+
+// 导入core中的基础文件
+//-----------------------------------------------------
+@import "core/setting";
+@import "core/css3";
+@import "core/mixin";
+@import "core/reset";
+$fontClassoutput: (tag mulu look date);
+@import "ext/font-face/font-face";
+
+//变量声明
+$navWidth 	: 45px;
+$asideWidth	: 260px;
+@import "ext/nav";
+@import "ext/footer";
+html,body{
+	display:block;
+	width:100%;
+	height:100%;
+}
+.container{
+	margin-left:$navWidth;
+	margin-right:340px;
+	padding:45px 100px;
+}
+h1{
+	font-size:45px;
+	font-family: "楷体";
+	line-height: 1;
+}
+.wz-intro{
+	padding:20px 0;
+	color:#999;
+	font-size:14px;
+	span{
+		padding-right:15px;
+	}
+}
+.page-go{
+	padding-top:50px;
+	color:#999;
+	a{
+		color:#999;
+	}
+}
+article{
+		font-size:16px;
+		line-height: 2;
+	}
+
+aside{
+	padding-top:100px;
+	// margin-left:100%;
+	width:$asideWidth;
+	margin-right:50px;
+	@include float(right);
+	.as-w{
+		margin-bottom:$baseGap;
+		ul{
+			box-shadow:5px 5px 5px rgba(209,209,209,.75);
+			padding:12px;
+			border:1px solid #b5b5b5;
+		}
+	}
+	h2{
+		color:#fff;
+		line-height: 35px;
+		background-color:#919191;
+		padding-left: 20px;
+
+	}
+	a{
+		color:#999;
+	}
+}
+
+@include font-icon(tag);
+@include font-icon(mulu);
+@include font-icon(date);
+@include font-icon(time);
+
