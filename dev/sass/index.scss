@@ -1,5 +1,5 @@
 @charset "UTF-8";
-//-----------------------------------------------------	
+//-----------------------------------------------------
 // base scss
 // 提供所有的基础功能包括：变量设置，css3前缀填充，@media，基础mixin，栅格化grid，reset样式
 // 默认会输出reset样式一份
@@ -60,7 +60,7 @@ aside{
 		height:150px;
 		@include gradient-vertical(rgba(0,0,0,0) 10%, rgba(0,0,0,.7));
 	}
-	span{	
+	span{
 		position:absolute;
 		top:85px;
 		left:50%;
